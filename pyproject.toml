@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "coder-detector"
+version = "0.1.0"
+description = "Is this human a coder? This tool reveals software developers among us. Catch them all before machines destroy humanity!"
+authors = ["Oleh Lokshyn <olokshyn@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "coder_detector"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^1.13.1"
+torchvision = "^0.14.1"
+transformers = "^4.26.1"
+fastapi = "^0.94.1"
+uvicorn = "^0.21.0"
+numpy = "^1.24.2"
+opencv-python = "^4.7.0.72"
+pydantic = "^1.10.6"
+python-multipart = "^0.0.6"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.1.1"
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
